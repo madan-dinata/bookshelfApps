@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Bookshelf Apps</h2>
+    </header>
+    <main>
+      <button class="tambah btn-green" onclick="tambah()">Tambah Buku Baru</button>
+      <section class="search">
+        <form id="searchBook">
+          <input type="text" id="cariJudul" placeholder="Cari judul buku" />
+          <button class="btn-green" id="cariSubmit" type="submit"><img src="assets/search_black_24dp.svg" alt="" /></button>
+        </form>
+      </section>
+      <section class="buku">
+        <h3>Belum selesai dibaca</h3>
+        <article class="list-buku" id="belumSelesai"></article>
+      </section>
+      <section class="buku">
+        <h3>Selesai dibaca</h3>
+        <article class="list-buku" id="sudahSelesai"></article>
+      </section>
+    </main>
+
+    <div class="penghalang" id="penghalang">
+      <form class="tambah-buku" id="inputBook">
+        <h1>Masukkan Buku Baru</h1>
+        <input type="text" placeholder="Judul" id="judul" required /> <br />
+        <input type="text" placeholder="Penulis" id="penulis" required /> <br />
+        <input type="number" placeholder="Tahun" id="tahun" required /> <br />
+        <input type="checkbox" id="sudahDibaca" /><label for="sudahdibaca">Sudah dibaca</label> <br />
+
+        <button type="submit" id="submitBuku" class="btn-green">Kirim</button> <br />
+        <button type="button" class="btn-red" onclick="batal()">Batal</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
