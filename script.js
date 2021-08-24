@@ -9,13 +9,7 @@ function batal() {
   document.getElementById("penghalang").style.display = "none";
 }
 
-// if (typeof Storage !== "undefined") {
-//   console.log("BERHASIL");
-// } else {
-//   console.log("GAGAL");
-// }
-
-function isStorageExist() /* boolean */ {
+function isStorageExist() {
   if (typeof Storage === undefined) {
     alert("Browser kamu tidak mendukung local storage");
     return false;
